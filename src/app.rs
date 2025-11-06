@@ -1,5 +1,5 @@
 use leptos::prelude::*;
-use leptos_meta::{provide_meta_context, MetaTags, Stylesheet, Title};
+use leptos_meta::{provide_meta_context, Link, MetaTags, Stylesheet, Title};
 use leptos_router::components::{Route, Router, Routes};
 use leptos_router::StaticSegment;
 
@@ -10,6 +10,10 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <Link rel="icon" href="/favicon.ico" sizes="any"/>
+                <Link rel="icon" href="/favicon.svg" sizes="any"/>
+                <Link rel="apple-touch-icon" sizes="180x180" href="/icon-180x180.png"/>
+                <Link rel="manifest" href="/manifest.json"/>
                 <AutoReload options=options.clone() />
                 <HydrationScripts options/>
                 <MetaTags/>
