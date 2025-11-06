@@ -1,0 +1,11 @@
+[tasks.tailwind]
+args = ["-i", "tailwind.css", "-o", "style/main.css", "--optimize", "--minify"]
+command = "tailwindcss"
+
+[tasks.tailwind-watch]
+args = ["-i", "tailwind.css", "-o", "style/main.css", "--watch"]
+command = "tailwindcss"
+
+[tasks.format]
+args = ["./**/*.rs"]
+command = "leptosfmt"
