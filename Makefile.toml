@@ -7,5 +7,5 @@ args = ["-i", "tailwind.css", "-o", "style/main.css", "--watch"]
 command = "tailwindcss"
 
 [tasks.format]
-args = ["./**/*.rs"]
+args = ["./src/**/*.rs"]
 command = "leptosfmt"
