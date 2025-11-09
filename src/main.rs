@@ -31,4 +31,6 @@ async fn main() -> Result<()> {
 }
 
 #[cfg(not(feature = "ssr"))]
-pub fn main() {}
+pub fn main() -> Result<()> {
+    Ok(())
+}
